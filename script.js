@@ -9,7 +9,7 @@ document.getElementById('fizzbuzz-form').addEventListener('submit', function(eve
     const data = JSON.stringify({ fizz_nb, buzz_nb, start, end });
     console.log(data);
 
-    fetch('http://localhost:8000/fizzbuzz', {
+    fetch('https://fizzbuzz-api-qhsi.onrender.com', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
